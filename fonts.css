@@ -1,0 +1,48 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3960512, 2020-10-14T09:47:27-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: SofiaPro-Light by Mostardesign
+ * URL: https://www.myfonts.com/fonts/mostardesign/sofia-pro/light/
+ *
+ * Webfont: SofiaPro-Regular by Mostardesign
+ * URL: https://www.myfonts.com/fonts/mostardesign/sofia-pro/regular/
+ *
+ * Webfont: SofiaPro-Medium by Mostardesign
+ * URL: https://www.myfonts.com/fonts/mostardesign/sofia-pro/medium/
+ *
+ *
+ * Webfonts copyright: Copyright © Olivier Gourvat - Mostardesign Type Foundry, 2020. All rights reserved.
+ *
+ * © 2020 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+/* @import url('//hello.myfonts.net/count/3caa3a'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
+@font-face {
+  font-family: 'SofiaPro';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./SofiaPro/SofiaProLight.woff2') format('woff2'), url('./SofiaPro/SofiaProLight.woff') format('woff');
+}
+@font-face {
+  font-family: 'SofiaPro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./SofiaPro/SofiaProRegular.woff2') format('woff2'), url('./SofiaPro/SofiaProRegular.woff') format('woff');
+}
+@font-face {
+  font-family: 'SofiaPro';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./SofiaPro/SofiaProMedium.woff2') format('woff2'), url('./SofiaPro/SofiaProMedium.woff') format('woff');
+}

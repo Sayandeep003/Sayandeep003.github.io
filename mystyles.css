@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&family=Open+Sans&display=swap');
+
+/* ==================================================================
+    VARIABLES
+================================================================== */
+
+:root {
+  --base-font-family: "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --title-font-family: "Montserrat", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --nav-font-family: "Montserrat", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono-font-family: "Fira Code", 'Courier New', Courier, monospace;
+  --base-font-size:   15px;
+  --base-font-weight: 400;
+  --base-line-height: 1.5;
+
+  --small-font-size:  calc(var(--base-font-size) * 0.7);
+  --large-font-size:  calc(var(--base-font-size) * 1.6);
+
+  --spacing-unit:     30px;
+
+  --background-color: #EEF1FF;
+  --text-color:       #363431;
+  --primary-color:    #E1E5EA;
+  --secondary-color:  #A7BBC7;
+  --tertiary-color:   #66347F;
+
+  --grey-color:       #999;
+  --grey-color-light: #cccccc;
+  --grey-color-dark:  #5e5e5e;
+}
+
+:root.darkmode {
+    --background-color: #343131;
+    --text-color:       #c9c7c3;
+    --primary-color:    #E1E5EA;
+    --secondary-color:  #A7BBC7;
+    --tertiary-color:   #66347F;
+
+    --grey-color:       #999999;
+    --grey-color-light:  #5e5e5e;
+    --grey-color-dark:  #cccccc;
+}
+
+img.darkmode {
+    filter: brightness(0.9) contrast(1.1);
+}
+
+.theme-toggle #darkmode-btn {
+    display: none;
+}
+
+.theme-toggle #lightmode-btn {
+    display: inline-block;
+}
+
+/* ==================================================================
+    DARK MODE
+================================================================== */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #343131;
+        --text-color:       #c9c7c3;
+        --primary-color:    #E1E5EA;
+        --secondary-color:  #A7BBC7;
+        --tertiary-color:   #66347F;
+
+        --grey-color:       #999999;
+        --grey-color-light:  #5e5e5e;
+        --grey-color-dark:  #cccccc;
+    }
+
+    .theme-toggle #lightmode-btn {
+        display: none;
+    }
+
+    .theme-toggle #darkmode-btn {
+        display: inline-block;
+    }
+
+    img {
+        filter: brightness(.9) contrast(1.1);
+    }
+
+    :root.lightmode {
+        --background-color: #EEF1FF;
+        --text-color:       #363431;
+        --primary-color:    #E1E5EA;
+        --secondary-color:  #A7BBC7;
+        --tertiary-color:   #66347F;
+
+        --grey-color:       #999;
+        --grey-color-light: #cccccc;
+        --grey-color-dark:  #5e5e5e;
+    }
+
+    img.lightmode {
+        filter: brightness(1) contrast(1);
+    }
+
+    a.lightmode {
+        font-weight: 500;
+    }
+}
+
+/* ==================================================================
+    DEFAULT FONT AND LAYOUT
+================================================================== */
+
+html {
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+  font-weight: var(--base-font-weight);
+  color: var(--text-color);
+  background-color: var(--background-color) !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: var(--base-line-height);
+    background-color: var(--background-color) !important;
+}
+
+.article {
+    margin-top: 80px;
+}
+
+.franklin-content {
+    margin-top: 40px;
+}
+
+.franklin-content section {
+    background-color: var(--background-color) !important;
+    padding-bottom: 40px;
+}
+
+p {
+    color: var(--text-color) !important;
+}
+
+p.institution {
+    color: var(--grey-color) !important;
+}
+
+/* ==================================================================
+    NAVBAR
+================================================================== */
+
+nav {
+    background-color: var(--background-color) !important;
+    font-family: var(--nav-font-family) !important;
+}
+
+nav a.navbar-brand {
+    font-weight: 500;
+    color: var(--tertiary-color) !important;
+}
+
+nav a.navbar-brand:hover {
+    color: var(--secondary-color) !important;
+}
+
+nav .nav-link {
+    color: var(--grey-color-dark) !important;
+}
+
+nav .nav-link:hover {
+    color: var(--grey-color-light) !important;
+}
+
+nav .navbar-collapse {
+    background-color: var(--background-color) !important;
+}
+
+nav .theme-toggle-wrapper {
+    z-index: 100;
+}
+
+nav .theme-toggle {
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    font-size: var(--large-font-size);
+    color: var(--gray-color) !important;
+    background-color: var(--background-color) !important;
+}
+
+@media (max-width: 991px) {
+    nav {
+        box-shadow: none;
+    }
+    
+    nav .navbar-collapse {
+        background-color: var(--background-color) !important;
+        box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%) !important;;
+    }
+}
+
+/* ==================================================================
+    TITLES
+================================================================== */
+
+.franklin-content h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  color: var(--text-color) !important;
+  font-family: var(--title-font-family);
+}
+
+.franklin-content h1 a { color: inherit; }
+.franklin-content h1 a:hover { color: var(--grey-color-dark); text-decoration: none; }
+.franklin-content h2 a { color: inherit; }
+.franklin-content h2 a:hover { color: var(--grey-color-dark); text-decoration: none; }
+.franklin-content h3 a { color: inherit; }
+.franklin-content h3 a:hover { color: var(--grey-color-dark); text-decoration: none; }
+.franklin-content h4 a { color: inherit; }
+.franklin-content h4 a:hover { color: var(--grey-color-dark); text-decoration: none; }
+.franklin-content h5 a { color: inherit; }
+.franklin-content h5 a:hover { color: var(--grey-color-dark); text-decoration: none; }
+.franklin-content h6 a { color: inherit; }
+.franklin-content h6 a:hover { color: var(--grey-color-dark); text-decoration: none; }
+
+/* ==================================================================
+    LINKS
+================================================================== */
+
+.franklin-content a {
+    color: var(--tertiary-color);
+}
+
+.franklin-content a:hover {
+    color: var(--secondary-color);
+}
+
+.franklin-content a:focus {
+    color: var(--tertiary-color);
+}
+
+.franklin-content .about a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+a.back-to-top i {
+    color: var(--grey-color-dark) !important;
+}
+
+.site-footer {
+    font-family: var(--mono-font-family);
+}
+
+.site-footer a {
+    color: inherit !important;
+    text-decoration: none;
+}

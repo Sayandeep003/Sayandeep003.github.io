@@ -1,0 +1,16 @@
+@import '../fonts/fonts.css';
+
+/* 
+    Allow adding a border to an element by just adding a border-width. (https: //github.com/tailwindcss/tailwindcss/pull/116)
+    // by default this get loaded from preflight setting (reset css), 
+    // but we need to set this to false as this overrides external sites that content is loaded to
+*/
+[class^='wt-'],
+[class*=' wt-'] {
+  border-width: 0;
+  border-style: solid;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
