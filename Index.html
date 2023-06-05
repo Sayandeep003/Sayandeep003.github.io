@@ -1,14 +1,13 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta name="author" content="Sayndeep Pal">
   <meta name="description" content="Undergraduate student">
 
   <meta name="theme-color" content="#2962ff">
-  <meta name="google-site-verification" content="NAQO3iSKFRWcyKd_qtw0wT6ifUoTuFFUmFAlnchQuUc" />
 
   <link
   rel=preconnect
@@ -34,14 +33,14 @@
   href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap"
   crossorigin=anonymous>
 
-<!-- locally served -->
+<!-- local files -->
 <link rel=stylesheet href="academic.min.css">
 
 <link rel=stylesheet href="extra.css">
 
 <link rel=stylesheet href="mystyles.css">
 
-<!-- highlight + katex + plotly -->
+
 
 
 
@@ -53,84 +52,91 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin=anonymous async></script>
 
    <title>Home | Sayandeep Pal</title>
-  <script type="text/javascript">
-    document.addEventListener('contextmenu', function(e) {
-        e.preventDefault();
-    });
-</script>
-
-</head>
-
-<body id=top data-spy="scroll" data-offset="70" data-target=#navbar-main>
-
-  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main>
-  <div class=container>
-    <!-- Main name -->
-    <div class="d-none d-lg-inline-flex">
-      <a class=navbar-brand href="/">Sayandeep Pal</a>
-    </div>
-    
-    <!-- Main name for mobile mode -->
-    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class=navbar-brand href="/">Sayandeep Pal</a>
-    </div>
-    
-    
-
-    <!--- Dark mode toggle -->
-    <div class="theme-toggle-wrapper">
-      <button class="theme-toggle">
-        <span class="toggle-icon">
-          <i class="far fa-moon" id="darkmode-btn"></i>
-          <i class="far fa-sun" id="lightmode-btn"></i>
-        </span>
-      </button>
-    </div>
-
-    <!-- <button class="theme-toggle">Toggle theme</button> -->
-  </div>
-</nav>
-
-
-  <span class="js-widget-page d-none"></span>
-
   
-<div class="franklin-content"><section id="about" class="home-section wg-about">
-  <div class="container">
-    <div class="row "></p>
-<div class="col-12 col-lg-4 profile"><img class="avatar avatar-circle" src="SayandeepPalimg.jpg" alt="Sayandeep Pal"> <div class=portrait-title><h2>Sayandeep Pal</h2><h3>Undergraduate student</h3><h3><a href="https://iiserb.ac.in/" target=_blank rel=noopener><span>IISER Bhopal</span></a></h3><ul class=network-icon aria-hidden=true><li><a href="https://linkedin.com/in/sayandeep-pal-807694226" target=_blank rel=noopener><i class="fab fa-linkedin big-icon"></i></a></li><li><a href="https://github.com/Sayandeep003" target=_blank rel=noopener><i class="fab fa-github big-icon"></i></a></li></ul></div></div>
-<div class="col-12 col-lg-8 about"><h1>About Me</h1>   I am currently a sophomore at <a href="https://iiserb.ac.in">IISER Bhopal</a> and wish to major in Data Science and Enginnering. My academic interests lie in Artificial Intelligence and LLMs. Learning new things and facing challenges always excites me. Believer in "what doesn't kill you makes you stronger".</p>
-<p>Currently I am working on projects as an intern on Computer Vision and Deep Learning. Apart from these my past experience includes:</p>
-<ul>
-<li><p>Audio-visual feature extraction from video data</p>
-</li>
-<li><p>Arduino programming and working with sensors </p>
-</li>
-<li><p>Bullish on learning new and upcoming tech in the Web3 space</p>
-</li>
-</ul>
-<p>Apart from my academic life, my personal life consists of enjoying music, films, football and good food. <p><i class="fas fa-download pr-1 fa-fw"></i>Download my <a href="Sayandeep_Pal_CV_2023.pdf" target=_blank>resume</a>.</p>
-<div class=row><div class=col-md-5><h3>Interests</h3><ul class=ul-interests><li>Computer Vision</li><li>Natural Language Prosessing</li><li>Application of Deep Learning in Healthcare</li><li>Image Classification</li></ul></div><div class=col-md-7><h3>Education</h3><ul class="ul-edu fa-ul"><li><i class="fa-li fas fa-graduation-cap"></i>
-  <div class=description>
-    <p class=course>Bachelor of Science (2021-2025)</p>
-    <p class=institution>Data Science and Engineering</p>
-    <p class=institution>IISER Bhopal</p>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="loading-screen">
+    <!--loading screen content -->
+    <div class="gif">  
+        <img src="tenor.gif" alt="loading shiba inu">  
+     </div>
   </div>
-</li>
-</ul></div></div></div>
-<p>    </div>
-  </div>
-</section>
+
+  <div id="main-screen" class="hidden">
+    <!--main screen content-->
+    <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main>
+        <div class=container>
+          <!-- Main name -->
+          <div class="d-none d-lg-inline-flex">
+            <a class=navbar-brand href="/">Sayandeep Pal</a>
+          </div>
+          
+          <!-- Main name for mobile mode -->
+          <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+            <a class=navbar-brand href="/">Sayandeep Pal</a>
+          </div>
+          
+          
+      
+          <!--- Dark mode toggle -->
+          <div class="theme-toggle-wrapper">
+            <button class="theme-toggle">
+              <span class="toggle-icon">
+                <i class="far fa-moon" id="darkmode-btn"></i>
+                <i class="far fa-sun" id="lightmode-btn"></i>
+              </span>
+            </button>
+          </div>
+      
+          <!-- <button class="theme-toggle">Toggle theme</button> -->
+        </div>
+      </nav>
+      
+      
+        <span class="js-widget-page d-none"></span>
+      
+        
+      <div class="franklin-content"><section id="about" class="home-section wg-about">
+        <div class="container">
+          <div class="row "></p>
+      <div class="col-12 col-lg-4 profile"><img class="avatar avatar-circle" src="SayandeepPalimg.jpg" alt="Sayandeep Pal"> <div class=portrait-title><h2>Sayandeep Pal</h2><h3>Undergraduate student</h3><h3><a href="https://iiserb.ac.in/" target=_blank rel=noopener><span>IISER Bhopal</span></a></h3><ul class=network-icon aria-hidden=true><li><a href="https://linkedin.com/in/sayandeep-pal-807694226" target=_blank rel=noopener><i class="fab fa-linkedin big-icon"></i></a></li><li><a href="https://github.com/Sayandeep003" target=_blank rel=noopener><i class="fab fa-github big-icon"></i></a></li></ul></div></div>
+      <div class="col-12 col-lg-8 about"><h1>About Me</h1>   I am currently a sophomore at <a href="https://iiserb.ac.in">IISER Bhopal</a> and wish to major in Data Science and Enginnering. My academic interests lie in Artificial Intelligence and LLMs. Learning new things and facing challenges always excites me. Believer in "what doesn't kill you makes you stronger".</p>
+      <p>Currently I am working on projects as an intern on Computer Vision and Deep Learning. Apart from these my past experience includes:</p>
+      <ul>
+      <li><p>Audio-visual feature extraction from video data</p>
+      </li>
+      <li><p>Arduino programming and working with sensors </p>
+      </li>
+      <li><p>Bullish on learning new and upcoming tech in the Web3 space</p>
+      </li>
+      </ul>
+      <p>Apart from my academic life, my personal life consists of enjoying music, films, football and good food. <p><i class="fas fa-download pr-1 fa-fw"></i>Download my <a href="Sayandeep_Pal_CV_2023.pdf" target=_blank>resume</a>.</p>
+      <div class=row><div class=col-md-5><h3>Interests</h3><ul class=ul-interests><li>Computer Vision</li><li>Natural Language Prosessing</li><li>Application of Deep Learning in Healthcare</li><li>Image Classification</li></ul></div><div class=col-md-7><h3>Education</h3><ul class="ul-edu fa-ul"><li><i class="fa-li fas fa-graduation-cap"></i>
+        <div class=description>
+          <p class=course>Bachelor of Science (2021-2025)</p>
+          <p class=institution>Data Science and Engineering</p>
+          <p class=institution>IISER Bhopal</p>
+        </div>
+      </li>
+      </ul></div></div></div>
+      <p>    </div>
+        </div>
+      </section>
+    </div>    
+</div>   
+      
+      
+      <!--main content ends -->
+          
+          
+      
+          
 
 
-
-
-<!-- CONTENT ENDS HERE -->
-    
-    
-
-    <script src="darkmode.js"></script>
-
+  <script src="script.js"></script>
+  <script src="darkmode.js"></script>
+      
   <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=anonymous></script>
 
   <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin=anonymous></script>
@@ -140,6 +146,5 @@
   <script src=https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin=anonymous></script>
 
   <script src="academic.min.js"></script>
-
-  </body>
+</body>
 </html>
